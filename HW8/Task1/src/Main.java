@@ -1,15 +1,16 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        //#1 Создать массив из 10 целых чисел. Значения могут быть любыми
-        //todo
+        Integer[] array2 = {34223, 4234, 432, 423, 234, 745, 2342, 123, 436534, 12431};
 
-        //#2 Распечатать все значения массива начиная с 0 до последнего индексов.
-        //todo
+        System.out.println("Исходный массив: " + Arrays.toString(array2));
 
-        //#3 Распечатать все значения массива с конца (начиная с последнего до 0 индексов).
-        //todo
+        List<Integer> list = Arrays.asList(array2);
+        Collections.reverse(list);
 
-        //#4 *** Задание особой сложности. Развернуть массив(см конец урока).
-        //todo
+        System.out.println("Развернутый массив: " + Arrays.toString(array2));
     }
 }
